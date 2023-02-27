@@ -16,8 +16,8 @@ def list():
       results = [fruits, prime_Nos]
       print(results, len(results))  # length prints 2 as it has only two objects which individually are entire list.
 
-
-
+      # List making using the range() function.
+      print(list(range(10)))   #Not working check it out later
 
 def main():
     list()
