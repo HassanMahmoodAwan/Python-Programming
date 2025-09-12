@@ -15,4 +15,4 @@ print(2-10)
 
 # print( 4 + "2") --> cannot perform int with str
 
-input("Press Enter to exit")
+input("Press Enter to exit")    # By default, Str is return by input.
