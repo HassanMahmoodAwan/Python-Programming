@@ -1,6 +1,6 @@
 print("Hello world")
 
-print("Welcome to", "Python Programming", sep=" - ", end="!!!\n")
+print("Welcome to", "Python Programming", sep="\t", end="!!!\n")
 
 # Single-line (Inline) Comments.
 
