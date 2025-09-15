@@ -42,6 +42,8 @@ def lists() -> Any:
     temp_array = [10, 40, 7, 3.3, 10212, 2]
     temp_array.sort(reverse=False)           # Only works when homogenious DataTypes.
     print(temp_array)
+    print(max(temp_array))    
+    print(min(temp_array))    
     del temp_array
     
     
@@ -62,5 +64,37 @@ def lists() -> Any:
     print(array)
 
 
+
+def tuples() -> None:
+    # Tuples same as List but faster then list (Im-mutable, Duplicates, All dataTypes, passed by reference, ordered, tuple-wise operations)
+    tuple01 = (10, 20.1, "Hassan", True, 20.1)
+    tuple02 = 10, 20, 30
+    tuple03 = (3,)
+    tuple04 = tuple( (10, 30, 40) )
+    tuple04 = tuple( [10, 30, 40] )    # List to tuple conversion.
+    
+    a, b, c = tuple02         # variable unpacking, but should be of same numbers.
+    
+    len(tuple01)
+    tuple01[2:3]
+    tuple01[2:]
+    tuple01[::-1]     # reverse the tuple.
+    
+    # Tuples are immutable so Methods like ( append, extend, pop, insert, remove, clear ) doesnot exsist.
+    
+    print(tuple01.count(20.1))
+    print(tuple01.index(True))
+    
+    # max min in List, tuple, String, But should have Homogenious datatype
+    print( max(tuple04) )
+    print( min(tuple04) )        
+    
+    
+    # Tuple Comprehension (Not explicitly, but using type-casting)
+    odd_tuple = tuple(num for num in range(1, 20, 1) if num % 2 == 1)
+    print(odd_tuple)
+    
+
 if __name__ == "__main__":
-    lists()
+    # lists()
+    tuples()
