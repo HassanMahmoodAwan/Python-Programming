@@ -28,7 +28,12 @@ print(
     random.random(),           # 0 to 1 --> float
     random.sample([20, 30, 40, 50, 11, 22, 33, "Python"], k=4),      # Random list of length 4 from provided list.
     random.choice([11,20, 30, 40, "Hassan"]),                        # Random value from the list.
-
                   
     sep="\n"              
+    )
+
+
+print(
+    max("Hello World"),
+    min("HelloWorld")
     )
