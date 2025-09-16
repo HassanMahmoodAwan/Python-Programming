@@ -50,9 +50,28 @@ def dictionary():
 
 
 def sets():
-    pass
+    """Sets are Unique, Sorted, unOrdered, No-Duplicate, Mutable, passed by reference. Operations include Union, Intersection, subset, disjoint, difference etc."""
+    
+    number_set = set()
+    number_set.add(10) # only one value at a time.
+    number_set.update({10,20,30, 40})
+    
+    number_set.discard(10)
+    number_set.discard(1021)  # will not give error.
+    #number_set.remove(123123) # Give key Error, works similar to discard
+    
+    
+    # Frozen Sets same to sets but Immutable.
+    frozen_set = frozenset({10, 20, 30})
+    frozen_set = frozenset("Hello")
+    frozen_set = frozenset([11, 22, 33])
+    print(frozen_set)
+
+
+    print(number_set)
 
 
 
 if __name__ == "__main__":
-    dictionary()
+    # dictionary()
+    sets()
