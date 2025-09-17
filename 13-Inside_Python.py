@@ -1,5 +1,5 @@
 """
-Python is a Interpreted Language means executed Line by Line. It doesnot have the compiler but does compile into something called compiler
+Python is a Interpreted Language means executed Line by Line. It doesnot have the compiler but does compile into something called bytecode.
 like
 
 text-file -> parser                  "Your Code in Text file is parsed by Python"
