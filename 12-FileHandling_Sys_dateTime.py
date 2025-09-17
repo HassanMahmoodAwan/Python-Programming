@@ -2,6 +2,7 @@ import os
 import time
 import subprocess
 import sys
+from datetime import datetime
 
 def os_module():
     os.getcwd()
@@ -54,9 +55,29 @@ def sys_module():
     # sys.exit(1)           # Exist with Error.
 
 
+def datetime_module() -> None:
+    now = datetime.now()       # Current Time
+    print(
+        now,
+        now.date(),
+        now.time(),
+        now.today(),        # same as now
+        now.year,
+        now.month,
+        now.day,
+        now.hour,
+        now.minute,
+        now.second,
+        now.microsecond)
     
+    myFormatTime = now.strftime("%H-%S-%M and  %Y %B %A %a %b")  # 16-44-31 and  2025 September Wednesday Wed Sep
+    print(myFormatTime)
+
+
+
 if __name__ == "__main__":
     # os_module()
     # file_handling()
-    sys_module()
+    # sys_module()
+    datetime_module()
     
